@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tin Tức</title>
+    <link rel="stylesheet" href="./assets/css/resets.css">
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/sanpham.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="./assets/css/sign_up.css">
+    <link rel="stylesheet" href="./assets/css/login.css">
+    <link rel="stylesheet" href="./assets/css/tintuc.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- header section start -->
+    <header>
+        <a href="" class="logo"><img src="./assets/picture/header/logo.svg" alt=""></a>
+        <nav class="navbar" class="active">
+            <div>
+                <a class="active1" href="#" class="sanpham" onclick="toggleSubnav(event)">sản phẩm</a>
+                <ul class="subnav">
+                    <li><a class="active1" href="caphedaklak.html" class="sanpham">chăm sóc da</a></li>
+                    <li><a class="active1" href="#" class="sanpham">chăm sóc cơ thể</a></li>
+                    <li><a class="active1" href="#" class="sanpham">chăm sóc môi</a></li>
+                    <li><a class="active1" href="#" class="sanpham">chăm sóc tóc</a></li>
+                </ul>
+            </div>
+            <a href="" class="vechungtoi">về chúng tôi</a>
+            <a href="tintuc.html" class="tintuc">tin tức</a>
+        </nav>
+        <div class="action">
+            <i class="fas fa-bars" id="menu-bars"></i>
+            <img class="search" src="./assets/picture/header/search.svg" alt="">
+            <img class="bag" src="./assets/picture/header/account.svg" alt="">
+            <a href="login.html"><img class="account" src="./assets/picture/header/bag.svg" alt=""></a>
+        </div>
+    </header>
+    <!-- search form -->
+    <form action="" id="search-form">
+        <input type="search" name="" id="search-box" placeholder="Tìm kiếm">
+        <label for="search-box" class="fas fa-search"></label>
+        <i class="fas fa-times" id="close"></i>
+    </form>
+
+    <!-- phan tin tuc -->
+    <section  class="section_tintuc">
+        <div class="search_tintuc_container">
+            <input class="search_tintuc" type="search" placeholder="Cocoon...">
+            <img class="Vector_img" src="./assets/picture/login/Vector.png" alt="search">
+        </div>
+        <div class="sum_title"></div>
+        <section class="title_header_and_img">
+            <div class="content-tintuc1">
+                <div class="text_title">
+                    <b style="font-family: 'Alatsi', sans-serif;">Cocoon - Tiên phong xu hướng mỹ phẩm thuần chay tại Việt Nam</b>
+                </div>
+                <div class="text_title_1">
+                    <p>Từ ngày 02/06, bên cạnh 24 “Điểm xanh” tại các chuỗi cửa hàng mỹ phẩm, Cocoon sẽ áp dụng thêm hình thức đổi vỏ chai online....</p>
+                </div>
+            </div>
+            <img  class="feedin_cocoon"   src="./assets/picture/login/feedin_cocoon.png" alt="">
+            <div class="text_xemtiep"><a href="./trangcontintuc.html"> XEM TIẾP</a></div>
+        </section>
+
+        <section class="thongtin">
+            <div class="thongtin_sanpham">
+                <div class="matna">
+                    <img src="./assets/picture/login/hoahong.png" alt="">
+                    <br>
+                    <div class="conten_matna">
+                        <h4 class="text_mana">Mặt nạ hoa hồng - Cấp ẩm và làm mềm da tức thì từ cánh hoa hồng tươi, pentavitin và HA</h4>
+                        <br>
+                        <p>Chúng tôi tin rằng, bí quyết để ngăn chặn tình trạng da mất nước không chỉ dừng lại ở việc cung cấp đầy đủ độ ẩm...</p>
+                    </div>
+                </div>
+                <div class="thachhoahonh">
+                    <img src="./assets/picture/login/thachhoahong.png" alt="">
+                    <div class="conten_matna">
+                        <h4>Thạch hoa hồng - Nuôi dưỡng và khóa ẩm cho da suốt 24 giờ từ hoa hồng hữu cơ, Pentavitin, axit amin và HA</h4>
+                        <br>
+                        <p>Kết hợp độc đáo giữa kết cấu mọng nước của THẠCH và sự mềm mại của kem giúp nuôi dưỡng và khóa ẩm cho da suốt 24H từ hoa hồng hữu...</p>
+                    </div>
+                </div>
+            </div>
+            <div class="Cocoon_tienphong">
+                <img src="./assets/picture/login/cocoon_coffe.png" alt="">
+                <div class="content_tienphong">
+                    <h4>Cocoon - Tiên phong xu hướng mỹ phẩm thuần chay tại Việt Nam</h4>
+                    <br>
+                    <p>Làm sạch lớp da chết trên mặt mỗi tuần sẽ giúp đẩy nhanh quá trình tái tạo da, duy trì sự mịn màng, tươi sáng....</p>
+                </div>
+            </div>
+            <br>
+        </section>
+
+        <section class="img_plygon1">
+            <div id="polygon-wrapper">
+                <img id="img_plygon" src="./assets/picture/login/Polygon1.png" alt="">
+            </div>
+        </section>
+    </section>
+
+  <!-- phan footer -->
+ <footer>
+        <div class="noidung">
+        <img class="logo" src="./assets/picture/header/logo.svg" alt="">
+        <ul class="grid">
+            <li>
+                <ul class="colum1">
+                    <li class="dong1">SẢN XUẤT TẠI CÔNG TY TNHH MỸ PHẨM NATURE STORY</li>
+                    <li class="">SỐ GPKD: 0313300273</li>
+                    <li class="">Phòng Đăng kí Kinh doanh - Sở kế hoạch và đầu tư <br>
+                     38C - 39C, khu phố 1, quốc lộ 1A, phường Tân Thới Hiệp, Quận 12, Tp.HCM, Việt Nam</li>
+                    <li class="">Điện thoại: 02838328228</li>
+            </ul>
+            </li>
+            <li>
+                <ul class="colum2">
+                    <li class="">
+                        <ul class="lienhe1">
+                            <li><a href="">LIÊN HỆ</a></li>
+                            <li><a href="">ĐẠI LÍ</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="lienhe">
+                            <li><img src="./assets/picture/footer/phone.png" alt=""></li>
+                            <li class="sdt">028 3832 8228</li>
+                        </ul>
+                    </li>
+                    <li class="lienhe1"><a href="">HƯỚNG DẪN MUA HÀNG</a></li>
+                </ul>
+            </li>
+            <li>
+                <ul class="colum3">
+                    <li><a href="">chính sách bảo mật</a></li>
+                    <li><a href="">chính sách đổi trả</a></li>
+                    <li><a href="">chính sách giao hàng</a></li>
+                </ul>
+            </li>
+        </ul>
+            <div class="line"></div>
+            <ul class="dongcuoi">
+                <li>
+                    <ul  class="icon_footer">
+                        <li><img class="face" src="./assets/picture/footer/iconface.png" alt=""></li>
+                        <li><img class="twiter" src="./assets/picture/footer/icontwit.png" alt=""></li>
+                        <li><img class="intas" src="./assets/picture/footer/iconintas.png" alt=""></li>
+                        <li><img class="ytb" src="./assets/picture/footer/iconytb.png" alt=""></li>
+                    </ul>
+                </li>
+                <li class="year_product">©2018 Cocoon</li>
+                <li class="baohanh"><img src="./assets/picture/footer/congthuong.png" alt=""></li>
+            </ul>
+        </div>
+    </div>
+    </footer>
+
+
+
+    <!-- phan js -->
+    <script src="./assets/js/header.js"></script>
+    <script src="./assets/js/img_plygon.js"></script>
+    
+
+</body>
+</html>

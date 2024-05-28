@@ -1,0 +1,281 @@
+.tintuc {
+   text-decoration: underline black;
+}
+.section_tintuc {
+  margin-top: 10%;
+  
+}
+
+.search_tintuc_container {
+  position: relative;
+  
+  display: inline-block;
+  margin: auto;
+  display: flex;
+  width: 40vw;
+
+
+
+  
+}
+
+.search_tintuc {
+  border: 2px solid #000000;
+  border-radius: 20px;
+  height: 5vh;
+  width: 40vw;
+  padding-left: 2.5rem; /* Was 40px */
+  margin: auto;
+}
+
+.Vector_img {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 2%;
+  height: 1.25rem; 
+  width: 1.25rem; 
+}
+.title_header_and_img {
+  margin-top: 0.625rem; /* Was 10px */
+  box-shadow: 0.2rem 0.3rem 0.2rem 0.3rem #CCCCCC; /* Was 2px 2px 2px 2px */
+  border: 0.125rem solid #DDDDDD; /* Was 2px */
+  width: 59%;
+  height: 24rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  z-index: 999;
+  border-radius: 1.0625rem;
+  margin: auto;
+  transition: all 0.3s ease; /* Thêm thuộc tính chuyển đổi mượt mà */
+}
+
+.title_header_and_img:hover {
+  box-shadow: 0.4rem 0.5rem 0.4rem 0.5rem #AAAAAA; /* Tạo bóng đổ lớn hơn khi hover */
+  transform: translateY(-10px); /* Di chuyển phần tử lên trên */
+  transition: all 0.3s ease; /* Làm cho sự chuyển đổi mượt mà */
+}
+
+.content-tintuc1{
+  width: 30%;
+  padding: 3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+.title_header_and_img img{
+  width: 60%;
+}
+.text_title {
+  color: #D09A59;
+  font-size: 1.9rem;
+}
+.text_title1{
+  font-size: 1rem;
+}
+
+.feedin_cocoon {
+  height: 100%;
+}
+
+.sum_title {
+  padding-top: 11%;
+}
+
+
+.text_xemtiep {
+  justify-content: center;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  width: 10%;
+  background-color: #ECC80DB2;
+  color: #700B0B;
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+.text_xemtiep:hover {
+  background-color: aquamarine;
+  color: #CCCCCC;
+
+}
+
+.feedin_cocoon {
+  display: block !important; 
+}
+
+.thongtin_sanpham {
+  
+  margin-top: 1rem; /* Khoảng cách giữa phần tử này và phần tử trước */
+  width: 80%; /* Chiều rộng của phần tử */
+  display: flex ;
+  flex-direction:column ;
+  justify-content: space-between;
+
+}
+
+.matna {
+  width: 100%; /* 527px */
+  height:auto; /* 308px */
+  margin-top: -3%;
+  
+}
+.conten_matna {
+  width: 100%;
+  padding: 5%;
+}
+
+
+.matna img {
+  width: 100%;
+  height: auto;
+}
+
+.thachhoahonh {
+  width: 100%; /* 535px */
+  height: 31.25rem; /* 500px */
+
+  border-radius: 7px;
+
+  box-shadow: 0.125rem 0.125rem 0.125rem 0.125rem #CCCCCC;
+  
+}
+.thachhoahonh img {
+  width: 100%;
+}
+
+.Cocoon_tienphong {
+  width: 100%; /* 556px */
+  height: auto; /* 862px */
+  left: 7%;
+  
+ /* Đặt phần tử này ở vị trí thứ 3 */
+}
+
+.Cocoon_tienphong img {
+  width: 100%;
+}
+
+.content_tienphong {
+  width: 73%;
+  margin: auto;
+}
+.matna, .thachhoahonh, .Cocoon_tienphong {
+  position: relative;
+  z-index: 999;
+  border-radius: 28px;
+  box-shadow: 0.2rem 0.3rem 0.2rem 0.3rem #CCCCCC;
+  transition: all 0.3s ease; /* Thêm thuộc tính chuyển đổi mượt mà */
+}
+
+.matna:hover, .thachhoahonh:hover ,#img_plygon:hover {
+  box-shadow: 0.4rem 0.5rem 0.4rem 0.5rem #AAAAAA; /* Tạo bóng đổ lớn hơn khi hover */
+  transform: translateY(-10px); /* Di chuyển phần tử lên trên */
+  transition: all 0.3s ease; /* Thêm thuộc tính chuyển đổi mượt mà */
+}
+
+.Cocoon_tienphong:hover{
+  box-shadow: 0.4rem 0.5rem 0.4rem 0.5rem #AAAAAA; /* Tạo bóng đổ lớn hơn khi hover */
+  transform: translateY(10px);
+  
+   /* Di chuyển phần tử lên trên */
+  transition: all 0.3s ease; /* Thêm thuộc tính chuyển đổi mượt mà */
+}
+.thongtin {
+  display: flex; /* Cho phép sắp xếp các phần tử ngang */
+   
+  margin-top: 5rem; /* Khoảng cách giữa phần tử này và phần tử trước */
+  width: 59%; /* Chiều rộng của phần tử */
+  margin-left: auto; /* Căn giữa phần tử */
+  margin-right: auto; /* Căn giữa phần tử */
+  gap: 5rem; /* Khoảng cách giữa các phần tử con */
+  margin-bottom: 20%;  /* 50px */
+  
+  height: auto;
+
+
+}
+#polygon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 2rem; /* Adjust this margin as needed */
+  margin-bottom: 2rem; /* Adjust this margin as needed */
+}
+
+#img_plygon {
+  max-width: 100%;
+  height: auto;
+  position: relative;
+  top: 11%;
+}
+
+@media(max-width:1024px){
+  .text_title{
+    font-size: 18px;
+    
+  }
+  .thongtin_sanpham {
+    height: 100%;
+    gap: 64px;
+  }
+}
+/* For tablets */
+@media (max-width: 768px) {
+  .section_tintuc {
+    flex-direction: column;
+  }
+  
+  .matna{
+    overflow: hidden;
+  }
+  .thachhoahonh{
+    overflow: hidden;
+  }
+  .Cocoon_tienphong{
+    overflow: hidden;
+  }
+}
+
+/* For mobile phones */
+@media (max-width: 425px) {
+  .section_tintuc{
+    margin-top: 20%;
+    width: 90%;
+  }
+  .search_tintuc{
+   width: 80%;
+  }
+  .search_tintuc_container{
+    width: 90%;
+  }
+  .Vector_img{
+    left:12%;
+  }
+  .title_header_and_img{
+    width: 90%;
+  }
+  .text_title{
+    font-size: 11px;
+  }
+  .text_title1{
+    font-size: 7px;
+  }
+  .thongtin{
+    width: 90%;
+  }
+  .matna{
+    overflow: hidden;
+  }
+  .thachhoahonh{
+    overflow: hidden;
+  }
+  .Cocoon_tienphong{
+    overflow: hidden;
+  }
+}

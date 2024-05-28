@@ -1,0 +1,318 @@
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.main_sign_up {
+    background-color: #921511;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+}
+
+.sign_up_page {
+    width: 32.5rem;
+    padding: 2rem;
+    margin-top: 4%;
+    margin-right: 2rem;
+    background-color: #FFFFFF;
+    min-height: 36.3rem;
+    border-radius: 5px;
+    transform: translateX(-36%);
+}
+
+.sign_up {
+    color: #D09A59;
+    font-size: 1.5rem;
+    text-align: left;
+    margin-bottom: 14px;
+}
+
+.input1 {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.input1:focus {
+    outline: none;
+    border-color: #D09A59;
+}
+
+.toggle-password {
+    position: absolute;
+    top: 42%;
+    right: 10px; /* Adjust distance from right edge as needed */
+    transform: translateY(-60%);
+    cursor: pointer;
+    color: #999;
+}
+
+.base {
+    width: 90%;
+    max-width: 37.875rem;
+    margin: 2rem auto;
+    position: relative; /* Add this line */
+     /* Reset any left offset */
+}
+
+.base img {
+    width: 100%;
+    height: auto;
+    animation: pulse 2s infinite;
+}
+
+.font_some {
+    font-size: 14px;
+    margin-left: 20px;
+    font-weight: 100;
+}
+
+.security_checkbox {
+    display: flex;
+}
+
+.security_checkbox .checkbox1 {
+    padding: 3px;
+    margin-left: auto;
+}
+
+.security {
+    font-size: 14px;
+    color: #BB3737;
+}
+
+.option1 {
+    margin-left: 3px;
+    font-size: 14px;
+    color: #BB3737;
+}
+
+.click_sing_up {
+    text-align: center;
+    margin-top: 30px;
+    background-color: #D09A59;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 3px;
+    width: 100%; /* Make button take full width */
+    border: none;
+    cursor: pointer;
+    transition: all 0.9s ease;
+}
+.click_sing_up:hover {
+    background-color: #00FF00; /* Màu nền mới khi hover */
+    color: #FFF; /* Đổi màu chữ nếu cần */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Tạo bóng đổ để nổi bật */
+    transform: translateY(-2px); /* Di chuyển lên một chút để tạo cảm giác nổi */
+    transition: all 0.9s ease; /* Làm cho sự chuyển đổi mượt mà */
+}
+
+.color_text {
+    color: #FFFFFF;
+}
+
+.link_login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.link_login p {
+    font-weight: 100;
+    color: #00000080;
+}
+
+.login_text {
+    color: #BB3737;
+}
+
+.login_google {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #FFFFFF;
+    border: 1px solid #000000;
+    border-radius: 3px;
+}
+
+.logo {
+    font-size: 24px;
+}
+
+.link_login_google {
+    font-size: 20px;
+    padding-top: 11px;
+}
+
+.password-container {
+    position: relative;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.7; /* Adjust the opacity value as needed */
+    z-index: 99;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 2); /* Màu đen với độ mờ */
+    z-index: 99; /* Đảm bảo overlay nằm trên các thành phần khác nhưng dưới popup */
+}
+
+.font_weight {
+     font-weight: 700;
+     margin-left: -180%;
+}
+
+.success-popup {
+    display: none;
+    position: fixed;
+    top: 30%;
+    left: 37%;
+    transform: translate(-50%, 100%);
+    background-color: #c72222;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 100; /* Đảm bảo popup nằm trên cả overlay */
+    text-align: center;
+    width: 500px;
+}
+
+.success-popup img {
+    display: block;
+    margin: 0 auto 10px auto;
+}
+
+.success-popup h3 {
+    font-size: 1.5rem; /* Adjust size as needed */
+    margin-bottom: 10px;
+}
+
+.success-popup p {
+    font-size: 1rem; /* Adjust size as needed */
+    margin-bottom: 20px;
+}
+
+.success-popup button {
+    background-color: #D09A59;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media(max-width: 1024px) {
+    .sign_up_page {
+        transform: translateX(-6%);
+    }
+}
+
+@media(max-width: 425px) {
+    .main_sign_up {
+        width: 100vw;
+    }
+    .base {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 0;
+    }
+    .base img {
+        width: 40%;
+        margin: auto;
+    }
+    .main_sign_up {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0;
+    }
+
+    .sign_up_page {
+        width: 80%;
+        margin: 0;
+        padding: 1rem;
+        transform: translateX(0%);
+    }
+    .font_weight {
+        margin-left: 10px;
+        margin-right: 60px;
+    }
+    .color_text {
+        font-size: 14px;
+    }
+}
+
+@media(max-width: 768px) {
+    .main_sign_up {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+
+    .sign_up_page {
+        width: auto;
+        margin: 0;
+        padding: 1rem;
+        box-sizing: border-box;
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.success-popup {
+    /* Keep other properties */
+    animation: zoomIn 0.7s ease-in-out forwards;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.05);
+        opacity: 0.9;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@media (min-width: 1440px) {
+    .base img {
+        position: relative;
+        left: -30%; /* Adjust to move 20% to the left */
+    }
+}
